@@ -1,0 +1,50 @@
+.container {
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--color-primary);
+    height: 100px;
+    // vertical-align: middle;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 55% 5% 20% 25%;
+    grid-template-rows: 90vh;
+    align-items: end;
+
+    margin: 0 10rem;
+    // overflow: hidden;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 17rem 2rem;
+}
+
+.featuredProjects {
+    margin: 5rem 13rem;
+}
+
+.whatWeCanDo {
+    margin: 15rem 0rem;
+}
+
+.footer {
+    padding: 8rem 0;
+    background-color: #fafafa;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,13 @@
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.centerXY {
+
+    &.scale {
+        &--small{
+            transform: translate(-50%, -50%) scale(1.7) !important;
+        }
+    }
+    
+}

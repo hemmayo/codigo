@@ -72,7 +72,6 @@
 }
 
 .hero {
-    font-family: Circular STD, sans-serif;
 
     &__typewriter {
         display: flex;
@@ -80,7 +79,7 @@
         align-items: flex-start;
         
         color: var(--color-white);
-        font-weight: 700;
+        font-weight: 900;
     
         &--heading {
             font-size: 17rem;
@@ -124,6 +123,7 @@
         font-size: 2.2rem;
         color: var(--color-white);
         margin-bottom: 2.5rem;
+        font-weight: 700;
     }
 }
 

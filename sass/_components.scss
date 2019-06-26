@@ -303,7 +303,7 @@
     &__heading {
         font-size: 3.7rem;
         font-weight: 900;
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
         line-height: 2;
         color: var(--color-primary);
         // text-align: center;
@@ -311,6 +311,7 @@
 
     &__items {
         display: flex;
+        margin-bottom: 6rem;
     }
 
     &__link {
@@ -325,6 +326,8 @@
         }
 
         &:hover &--main {
+            color: var(--color-primary);
+
             &::after {
                 transform: translateX(calc(100% + 4rem));
                 background-color: var(--color-primary);
@@ -338,6 +341,7 @@
             font-weight: 900;
             margin-bottom: .5rem;
             color: #000000;
+            transition: all 1.25s cubic-bezier(.2,.6,.4,1);
 
             &::after {
                 content: '';
@@ -360,5 +364,23 @@
             font-size: 1.4rem;
             color: #020202;
         }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        & img {
+            height: 2rem;
+            
+            &:not(:last-of-type) {
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    &__copyright {
+
     }
 }

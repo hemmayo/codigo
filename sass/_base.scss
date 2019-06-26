@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url("../css/fonts/AvenirLTStd-Book.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url("../css/fonts/AvenirLTStd-Light.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url("../css/fonts/AvenirLTStd-Medium.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url("../css/fonts/AvenirLTStd-Heavy.otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url("../css/fonts/AvenirLTStd-Black.otf");
+    font-weight: 900;
+}
+
 :root {
     --color-primary: rgb(213, 51, 62);
     --color-white: #fff;

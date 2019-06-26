@@ -318,12 +318,29 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
   .footer__link:last-of-type {
     border-right: none; }
+  .footer__link:hover .footer__link--main::after {
+    transform: translateX(calc(100% + 4rem));
+    background-color: var(--color-primary); }
   .footer__link--main {
+    position: relative;
     display: inline-block;
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: .5rem;
     color: #000000; }
+    .footer__link--main::after {
+      content: '';
+      width: 100%;
+      height: .8rem;
+      position: absolute;
+      top: 30%;
+      left: 0;
+      background-color: #000;
+      mask-image: url(../img/arrow-right.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      transform: translateX(calc(100% + 2rem));
+      transition: all 1.25s cubic-bezier(0.2, 0.6, 0.4, 1); }
   .footer__link--sub {
     display: block;
     font-size: 1.4rem;

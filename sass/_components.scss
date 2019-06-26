@@ -324,12 +324,36 @@
             border-right: none;
         }
 
+        &:hover &--main {
+            &::after {
+                transform: translateX(calc(100% + 4rem));
+                background-color: var(--color-primary);
+            }
+        }
+
         &--main {
+            position: relative;
             display: inline-block;
             font-size: 2.5rem;
             font-weight: 900;
             margin-bottom: .5rem;
             color: #000000;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: .8rem;
+                position: absolute;
+                top: 30%;
+                left: 0;
+                background-color: #000;
+                mask-image: url(../img/arrow-right.svg);
+                mask-size: contain;
+                mask-repeat: no-repeat;
+
+                transform: translateX(calc(100% + 2rem));
+                transition: all 1.25s cubic-bezier(.2,.6,.4,1);
+            }
         }
         &--sub {
             display: block;

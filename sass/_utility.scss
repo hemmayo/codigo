@@ -2,6 +2,10 @@
     background-color: var(--color-primary);
 }
 
+.text-white {
+    color: var(--color-white) !important;
+}
+
 .centerXY {
 
     &.scale {

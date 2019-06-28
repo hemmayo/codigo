@@ -23,10 +23,11 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid currentColor;
             cursor: pointer;
             transform: translateX(-100%);
             transition: all .3s cubic-bezier(.4,.6,.6,1);
+            z-index: -1;
         }
 
         &:hover::before {
@@ -37,19 +38,24 @@
             margin-right: 6.5rem;
         }
     }
-
+    
     &__link:link,
     &__link:active,
     &__link:visited {
         text-decoration: none;
         text-transform: capitalize;
-        color: var(--color-white);
         font-weight: lighter;
+        color: currentColor;
     }
 
     &__logo {
-        width: 15rem;
+        width: 14rem;
         cursor: pointer;
+        display: flex;
+
+        &Image {
+            width: 100%;
+        }
     }
 }
 
@@ -64,6 +70,7 @@
     
         &--dark {
             background-color: var(--color-dark);
+            color: var(--color-white);
         }
     }
     &:hover {
@@ -382,5 +389,99 @@
 
     &__copyright {
 
+    }
+}
+
+.works {
+    &__header {
+        & p {
+            font-size: 6.2rem;
+            font-weight: 900;
+
+            &:last-of-type {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__category {
+        display: flex;
+        width: 100%;
+        margin-top: 5rem;
+        
+        &Item {
+            flex: 0 0 33.33%;
+            cursor: pointer;
+
+            &Text {
+                font-size: 1.6rem;
+            }
+
+            &.is-active {
+                font-weight: bold;
+                display: flex;
+                position: relative;
+                transform: translateX(2rem);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    width: 1.5rem;
+                    height: .2rem;
+
+                    transform: translateX(-2rem);
+
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+
+        &List {
+            flex: 1 1 75%;
+            max-height: 40rem;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2.6rem;
+        }
+
+        &Legend {
+            flex: 1 1 25%;
+            text-transform: uppercase;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &Header {
+                font-size: 1.1rem;
+                font-weight: 700;
+            }
+            &List {
+                margin-top: 1.5rem;
+                border-left: 1px solid var(--color-dark);
+                padding: 1rem 2.5rem;
+                width: 80%;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1rem;
+            }
+            &Item {
+                display: flex;
+                align-items: center;
+
+                &Image {
+                    height: 1.2rem;
+                    width: 1.2rem;
+                }
+                &Text {
+                    font-size: 1.05rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
     }
 }

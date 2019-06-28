@@ -4,6 +4,7 @@
 
 .header {
     background-color: var(--color-primary);
+    color: var(--color-white);
     height: 100px;
     // vertical-align: middle;
     display: flex;
@@ -12,6 +13,11 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+
+    &.header-light {
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
 }
 
 .hero {
@@ -48,4 +54,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.works {
+    padding: 15vw 15rem;
 }

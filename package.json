@@ -1,7 +1,7 @@
 {
-  "name": "sagacity-studio",
+  "name": "codigo",
   "version": "1.0.0",
-  "description": "Sagacity Studio ",
+  "description": "Codigo clone",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass ./sass/main.scss ./css/style.css -w",

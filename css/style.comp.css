@@ -124,7 +124,7 @@ body {
       position: absolute;
       bottom: 0;
       left: 0;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid currentColor;
       cursor: pointer;
       transform: translateX(-100%);
       transition: all 0.3s cubic-bezier(0.4, 0.6, 0.6, 1);
@@ -138,6 +138,8 @@ body {
     text-transform: capitalize;
     font-weight: lighter;
     color: currentColor; }
+    .nav__link:link.is-active, .nav__link:active.is-active, .nav__link:visited.is-active {
+      font-weight: bold; }
   .nav__logo {
     width: 14rem;
     cursor: pointer;
